@@ -1,0 +1,12 @@
+C:\Users\vikranthg\Documents\GitHub\OptTrain\OptixAdvancedCPT\ProjectFiles\NetSolution\bin\OptixAdvancedCPT.deps.json
+C:\Users\vikranthg\Documents\GitHub\OptTrain\OptixAdvancedCPT\ProjectFiles\NetSolution\bin\OptixAdvancedCPT.dll
+C:\Users\vikranthg\Documents\GitHub\OptTrain\OptixAdvancedCPT\ProjectFiles\NetSolution\bin\OptixAdvancedCPT.pdb
+C:\Users\vikranthg\Documents\GitHub\OptTrain\OptixAdvancedCPT\ProjectFiles\NetSolution\obj\Debug\OptixAdvancedCPT.csproj.AssemblyReference.cache
+C:\Users\vikranthg\Documents\GitHub\OptTrain\OptixAdvancedCPT\ProjectFiles\NetSolution\obj\Debug\OptixAdvancedCPT.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vikranthg\Documents\GitHub\OptTrain\OptixAdvancedCPT\ProjectFiles\NetSolution\obj\Debug\OptixAdvancedCPT.AssemblyInfoInputs.cache
+C:\Users\vikranthg\Documents\GitHub\OptTrain\OptixAdvancedCPT\ProjectFiles\NetSolution\obj\Debug\OptixAdvancedCPT.AssemblyInfo.cs
+C:\Users\vikranthg\Documents\GitHub\OptTrain\OptixAdvancedCPT\ProjectFiles\NetSolution\obj\Debug\OptixAdvancedCPT.csproj.CoreCompileInputs.cache
+C:\Users\vikranthg\Documents\GitHub\OptTrain\OptixAdvancedCPT\ProjectFiles\NetSolution\obj\Debug\OptixAdvancedCPT.dll
+C:\Users\vikranthg\Documents\GitHub\OptTrain\OptixAdvancedCPT\ProjectFiles\NetSolution\obj\Debug\refint\OptixAdvancedCPT.dll
+C:\Users\vikranthg\Documents\GitHub\OptTrain\OptixAdvancedCPT\ProjectFiles\NetSolution\obj\Debug\OptixAdvancedCPT.pdb
+C:\Users\vikranthg\Documents\GitHub\OptTrain\OptixAdvancedCPT\ProjectFiles\NetSolution\obj\Debug\ref\OptixAdvancedCPT.dll
