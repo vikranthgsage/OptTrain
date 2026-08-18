@@ -1140,6 +1140,76 @@ Children:
         DataType: ResourceUri
         ModellingRule: Optional
         Value: "ns=24;%PROJECTDIR%/Images/burger_menu_white.svg"
+      - Name: MouseClickEventHandler1
+        Type: EventHandler
+        Children:
+        - Name: ListenEventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+        - Name: MethodsToCall
+          Type: BaseObjectType
+          Children:
+          - Name: MethodContainer1
+            Type: BaseObjectType
+            Children:
+            - Name: ns=3;ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Value: "/Objects/Commands/VariableCommands"
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: ns=3;Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "Toggle"
+            - Name: InputArguments
+              Type: BaseObjectType
+              Children:
+              - Name: VariableToModify
+                Type: BaseDataVariableType
+                DataType: VariablePointer
+                Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../../SideNavPanelVisible@NodeId"
+              - Name: ArrayIndex
+                Type: BaseDataVariableType
+                DataType: UInt32
+                Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
+                ValueRank: ScalarOrOneDimension
+        - Name: EventArguments
+          Type: MouseClickEvent
+          Children:
+          - Name: EventId
+            Type: PropertyType
+            DataType: ByteString
+          - Name: EventType
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceNode
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceName
+            Type: PropertyType
+            DataType: String
+          - Name: Time
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: ReceiveTime
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: Message
+            Type: PropertyType
+            DataType: LocalizedText
+          - Name: Severity
+            Type: PropertyType
+            DataType: UInt16
   - Name: Lesson3_PanelLoader
     Type: PanelLoader
     Children:
@@ -1194,7 +1264,6 @@ Children:
     - Name: Width
       Type: BaseVariableType
       DataType: Size
-      ModellingRule: Optional
       Value: 304.0
     - Name: Height
       Type: BaseVariableType
@@ -1804,6 +1873,60 @@ Children:
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../SideNavPanelVisible"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Size
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Size
+          ReferenceType: HasParameter
+          Value: -304.0
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "-{0}"
+            - Name: ns=3;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../Width"
+      - Name: Value change animation
+        Type: BehaviourAnimation
+        Children:
+        - Name: Duration
+          Type: BaseDataVariableType
+          DataType: Int32
+          ModellingRule: Optional
+          Value: 1000
+        - Name: EasingCurve
+          Type: BaseDataVariableType
+          DataType: EasingCurveEnum
+          ModellingRule: Optional
   - Name: SideNavPanelVisible
     Type: BaseDataVariableType
     DataType: Boolean

@@ -404,6 +404,40 @@ Children:
       - Name: Rotation
         Type: BaseVariableType
         DataType: Size
+        Value: 40.0
+      - Name: NumberAnimation1
+        Type: NumberAnimation
+        Children:
+        - Name: To
+          Type: BaseDataVariableType
+          DataType: Float
+          Value: 40.0
+        - Name: Target
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/VariableTypes/BaseVariableType"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../Rotation@NodeId"
+        - Name: Running
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: From
+          Type: BaseDataVariableType
+          DataType: Float
+          ModellingRule: Optional
+          Value: -40.0
+        - Name: Loops
+          Type: BaseDataVariableType
+          DataType: Int32
+          ModellingRule: Optional
+          Value: -1
 - Name: Lesson3_ComplexAnimation
   Id: g=42147a0b03cffb4e714e83ee37e583c5
   Supertype: Screen
