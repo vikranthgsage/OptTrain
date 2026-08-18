@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="272px" height="179px" viewBox="0 0 272 179" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>A2_Motor-1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#DDDDDD" offset="0%"></stop>
+            <stop stop-color="#BDBDBD" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="249.834254" height="149.166667" rx="45"></rect>
+    </defs>
+    <g id="Proposte" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="General_Motors" transform="translate(-352.000000, -734.000000)">
+            <g id="A2_Motor-1" transform="translate(352.000000, 734.000000)">
+                <rect id="Rectangle-3-Copy" fill="#757575" x="94.6740331" y="118.831933" width="59.4843462" height="48.33"></rect>
+                <rect id="Rectangle-3-Copy-2" fill="url(#linearGradient-1)" x="76.640884" y="160.94958" width="95.174954" height="17.9"></rect>
+                <g id="background">
+                    <rect id="Rectangle-4" fill="#757575" x="241.944751" y="72.2016807" width="29.7421731" height="11.9333333"></rect>
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="Rectangle-2" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                    <rect id="Rectangle-3" fill="#757575" mask="url(#mask-3)" x="23.7937385" y="-23.8666667" width="5.94843462" height="184.966667"></rect>
+                    <rect id="Rectangle-3-Copy" fill="#757575" mask="url(#mask-3)" x="220.092081" y="-23.8666667" width="5.94843462" height="184.966667"></rect>
+                </g>
+                <rect id="Rectangle-3" fill="#757575" x="41.6390424" y="17.9" width="166.556169" height="5.96666667"></rect>
+                <rect id="Rectangle-3-Copy" fill="#757575" x="41.6390424" y="29.8333333" width="166.556169" height="5.96666667"></rect>
+                <rect id="Rectangle-3-Copy-2" fill="#757575" x="41.6390424" y="41.7666667" width="166.556169" height="5.96666667"></rect>
+                <polygon id="Rectangle-22" fill="#9B9B9B" points="133.745856 132.565294 208.883978 132.565294 208.883978 84.2352941 133.745856 84.2352941"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

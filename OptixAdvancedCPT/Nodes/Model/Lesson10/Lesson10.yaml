@@ -1,0 +1,6 @@
+Name: Lesson10
+Type: FolderType
+Children:
+- File: ContinuousMQTT/ContinuousMQTT.yaml
+- File: ManualMQTT/ManualMQTT.yaml
+- File: ChatMQTT/ChatMQTT.yaml

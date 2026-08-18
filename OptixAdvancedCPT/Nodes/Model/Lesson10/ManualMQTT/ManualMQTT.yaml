@@ -1,0 +1,5 @@
+Name: ManualMQTT
+Type: FolderType
+Children:
+- File: DataToSend/DataToSend.yaml
+- File: ReceivedData/ReceivedData.yaml

@@ -1,0 +1,29 @@
+Name: HistogramChart
+Id: g=7966604747fae1099c683a21c011f4b4
+Type: FolderType
+Children:
+- Name: Minimal
+  Id: g=648ad34d0c66ab6ea8601269dd9ece77
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 5
+- Name: Low
+  Id: g=9af559b0a65e4cdc95c3b3395edbc51c
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 11
+- Name: Medium
+  Id: g=51ed2c7bbc63c913460a4a0dd1273f97
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 64
+- Name: High
+  Id: g=a52b7ed337a58254b10448909f3d2b7b
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 32
+- Name: Critical
+  Id: g=6f34740e196964bec7bb3d254697d72b
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 7

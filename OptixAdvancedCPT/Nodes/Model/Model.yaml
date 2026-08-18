@@ -1,0 +1,19 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- File: Lesson1/Lesson1.yaml
+- File: Lesson2/Lesson2.yaml
+- File: Lesson3/Lesson3.yaml
+- File: Lesson4/Lesson4.yaml
+- File: Lesson5/Lesson5.yaml
+- File: Lesson6/Lesson6.yaml
+- File: Lesson7/Lesson7.yaml
+- File: Lesson8/Lesson8.yaml
+- File: Lesson9/Lesson9.yaml
+- File: Lesson10/Lesson10.yaml
+- File: Lesson_11/Lesson_11.yaml
+- File: Lesson12/Lesson12.yaml
+- File: Lesson13/Lesson13.yaml
+- File: Lesson14/Lesson14.yaml
+- File: Lesson15/Lesson15.yaml
+- File: Lesson17/Lesson17.yaml

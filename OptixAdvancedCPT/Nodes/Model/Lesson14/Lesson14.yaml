@@ -1,0 +1,12 @@
+Name: Lesson14
+Type: FolderType
+Children:
+- Name: ConfirmVariable
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: SignVariable
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: DoubleSignVariable
+  Type: BaseDataVariableType
+  DataType: Int32

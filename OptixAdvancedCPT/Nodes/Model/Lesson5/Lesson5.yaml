@@ -1,0 +1,8 @@
+Name: Lesson5
+Type: FolderType
+Children:
+- Name: XY_Array
+  Type: BaseDataVariableType
+  DataType: Int32
+  ValueRank: 2
+  ArrayDimensions: [10,2]

@@ -1,0 +1,9 @@
+Name: RangeTransitionedEvent
+Type: FolderType
+Children:
+- Name: TriggerVariable
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: TargetVariable
+  Type: BaseDataVariableType
+  DataType: UtcTime

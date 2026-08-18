@@ -1,0 +1,51 @@
+Name: Lesson17
+Type: FolderType
+Children:
+- Name: DataModel1
+  Id: g=748c962a488a50eebd95704679744a5b
+  Type: DataModelLesson16
+  Children:
+  - Name: Variable1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 10
+  - Name: Variable2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 24
+  - Name: Variable3
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 23
+  - Name: Variable4
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 22
+  - Name: Variable5
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 88
+- Name: DataModel2
+  Id: g=ce4e8a641bd37684ae60abb688b684ce
+  Type: DataModelLesson16
+  Children:
+  - Name: Variable1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 65
+  - Name: Variable2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 33
+  - Name: Variable3
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 32
+  - Name: Variable4
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 11
+  - Name: Variable5
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 99

@@ -1,0 +1,6 @@
+Name: Lesson12
+Type: FolderType
+Children:
+- Name: ConditionalValueSource
+  Type: BaseDataVariableType
+  DataType: Int32

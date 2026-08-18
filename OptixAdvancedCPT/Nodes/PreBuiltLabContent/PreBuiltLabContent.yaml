@@ -1,0 +1,9 @@
+Name: PreBuiltLabContent
+Type: FolderType
+Children:
+- File: Templates/Templates.yaml
+- File: Navigation/Navigation.yaml
+- File: Types/Types.yaml
+- File: Panels/Panels.yaml
+- File: Lesson3_Widgets/Lesson3_Widgets.yaml
+- File: Lesson15_Data/Lesson15_Data.yaml

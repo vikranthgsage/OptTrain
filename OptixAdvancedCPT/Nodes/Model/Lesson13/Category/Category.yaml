@@ -1,0 +1,17 @@
+Name: Category
+Id: g=6d69d35d777afcca7589d64e5c2629fd
+Type: FolderType
+Children:
+- Name: Variable1
+  Id: g=6d8c4fe6287b30808b82aee9ba45f4e5
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Low"
+- Name: Variable2
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Medium"
+- Name: Variable3
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "High"

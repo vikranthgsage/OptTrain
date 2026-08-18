@@ -1,0 +1,19 @@
+Name: PieChart
+Id: g=98db72d5f52b8aaa6eef5b6bd6651b1d
+Type: FolderType
+Children:
+- Name: Idle
+  Id: g=0327f4333fee532087b512db89a0bf39
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 21
+- Name: Active
+  Id: g=4e374458bcbc4ae46d18a110a5d162cc
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 64
+- Name: Overload
+  Id: g=a7be0b62635e67e0a11e1d9997f07288
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 15

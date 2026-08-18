@@ -1,0 +1,45 @@
+Name: Trend
+Type: FolderType
+Children:
+- Name: ControlInput
+  Id: g=7d65209df747b8e5b092adf53e724a69
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../PreBuiltLabContent/Lesson15_Data/VariablesSimulator/Ramp"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: ReferenceSignal
+  Id: g=f700d4501381f52c9ed9197b32f341f7
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../PreBuiltLabContent/Lesson15_Data/VariablesSimulator/Cosine"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: PrimarySignal
+  Id: g=8ac58371163eaa0d185411da5b50c2a2
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../PreBuiltLabContent/Lesson15_Data/VariablesSimulator/Sine"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2

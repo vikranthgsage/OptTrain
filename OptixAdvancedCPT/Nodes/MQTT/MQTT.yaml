@@ -1,0 +1,85 @@
+Name: MQTT
+Type: MQTTCategoryFolder
+Children:
+- Name: PreAddedMQTTClient
+  Id: g=d3d7da289db57f70354a1319c852a717
+  Type: MQTTClient
+  Children:
+  - Name: BrokerAddress
+    Type: PropertyType
+    DataType: String
+    Value: "test.mosquitto.org"
+  - Name: BrokerPort
+    Type: PropertyType
+    DataType: UInt16
+    Value: 1883
+  - Name: ClientId
+    Type: PropertyType
+    DataType: String
+    Value: "ftoptix123456"
+  - Name: Status
+    Type: BaseDataVariableType
+    DataType: StatusEnum
+    ReferenceType: HasProperty
+    AccessLevel: Read
+  - Name: UserIdentityType
+    Type: BaseDataVariableType
+    DataType: UserIdentityTypeEnum
+  - Name: SSLTLSEnabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: ValidateBrokerCertificate
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Class: Reference
+    Target: ns=13;i=12
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=44
+    Direction: Forward
+  - Name: MQTTSubscriber1
+    Type: MQTTSubscriber
+    Children:
+    - Name: Subscriptions
+      Type: BaseObjectType
+      Children:
+      - Name: Subscription1
+        Type: Subscription
+        Children:
+        - Name: Topic
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "RK_Test/a"
+        - Name: Folder
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/OptixAdvancedCPT/Model/Lesson10/ChatMQTT/ReceivedData"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
+        - Name: QoS
+          Type: BaseDataVariableType
+          DataType: QoSLevelEnum
+    - Class: Reference
+      Target: ns=13;i=47
+      Direction: Forward
+  - Name: WillMessageEnabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: WillTopic
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: WillPayload
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: WillQoS
+    Type: BaseDataVariableType
+    DataType: QoSLevelEnum
+  - Name: WillRetain
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: WillDelayInterval
+    Type: BaseDataVariableType
+    DataType: Duration

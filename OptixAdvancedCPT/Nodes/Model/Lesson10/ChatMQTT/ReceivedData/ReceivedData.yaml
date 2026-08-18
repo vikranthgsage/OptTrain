@@ -1,0 +1,14 @@
+Name: ReceivedData
+Id: g=c7b72d08dad1aea4b496f231076aa094
+Type: FolderType
+Children:
+- Name: userName
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Message
+  Type: BaseDataVariableType
+  DataType: String
+- Name: messageTimestamp
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Jan 1, 1601, 12:00:00 AM"

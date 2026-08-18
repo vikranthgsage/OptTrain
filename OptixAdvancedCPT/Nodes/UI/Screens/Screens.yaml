@@ -1,0 +1,6 @@
+Name: Screens
+Type: ScreensCategoryFolder
+Children:
+- File: LessonsUI/LessonsUI.yaml
+- File: Templates/Templates.yaml
+- File: UserWorkspace/UserWorkspace.yaml

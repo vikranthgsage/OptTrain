@@ -1,0 +1,1506 @@
+Name: Reports
+Type: ReportsCategoryFolder
+Children:
+- Name: StyleSheet1
+  Id: g=d075a51815a28c3dfe6817f789e0ddd5
+  Type: ReportStyleSheet
+  Children:
+  - Name: ButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ButtonStyle
+    - Name: Accent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#075982"
+    - Name: BorderedRectangular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+    - Name: BorderedCircular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Emergency
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#eb001b"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f8e71c"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Transparent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+  - Name: InputBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: InputBoxStyle
+  - Name: SwitchStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: SwitchStyle
+  - Name: GaugeStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: GaugeStyle
+  - Name: NavigationPanelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: NavigationPanelStyle
+  - Name: ChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ChartStyle
+  - Name: DataListStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: DataListStyle
+  - Name: ToolTipStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ToolTipStyle
+  - Name: ScrollBarStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScrollBarStyle
+  - Name: AccordionStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: AccordionStyle
+  - Name: PieChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: PieChartStyle
+  - Name: HistogramChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: HistogramChartStyle
+  - Name: LabelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: LabelStyle
+  - Name: RadioButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RadioButtonStyle
+  - Name: CheckBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: CheckBoxStyle
+  - Name: RectangleStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RectangleStyle
+      Children:
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 1.0
+  - Name: ScreenStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScreenStyle
+- Name: Lesson15Report
+  Type: Report
+  Children:
+  - Name: PageSize
+    Type: BaseDataVariableType
+    DataType: PageSize
+    Value: 2
+  - Name: PageWidth
+    Type: BaseDataVariableType
+    DataType: Size
+    Value: 210.0
+    Children:
+    - Name: EngineeringUnits
+      Type: EUInformationType
+      DataType: EUInformation
+      Children:
+      - Name: UnitId
+        Type: BaseDataVariableType
+        DataType: Int32
+        AccessLevel: Read
+        Value: 5066068
+      - Name: DisplayName
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+      - Name: Description
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+  - Name: PageHeight
+    Type: BaseDataVariableType
+    DataType: Size
+    Value: 297.0
+    Children:
+    - Name: EngineeringUnits
+      Type: EUInformationType
+      DataType: EUInformation
+      Children:
+      - Name: UnitId
+        Type: BaseDataVariableType
+        DataType: Int32
+        AccessLevel: Read
+        Value: 5066068
+      - Name: DisplayName
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+      - Name: Description
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+  - Name: StyleSheet
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/OptixAdvancedCPT/Reports/StyleSheet1"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/StyleSheet/ReportStyleSheet"
+  - Name: PageCount
+    Type: BaseDataVariableType
+    DataType: String
+    AccessLevel: Read
+    Value: "{page_count}"
+  - Name: PageNumber
+    Type: BaseDataVariableType
+    DataType: String
+    AccessLevel: Read
+    Value: "{page_number}"
+  - Name: PrintDateTime
+    Type: BaseDataVariableType
+    DataType: DateTime
+    AccessLevel: Read
+  - Name: Header
+    Type: Panel
+    Children:
+    - Name: Height
+      Type: BaseDataVariableType
+      DataType: Size
+      Value: 20.0
+      Children:
+      - Name: EngineeringUnits
+        Type: EUInformationType
+        DataType: EUInformation
+        Children:
+        - Name: UnitId
+          Type: BaseDataVariableType
+          DataType: Int32
+          AccessLevel: Read
+          Value: 5066068
+        - Name: DisplayName
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+        - Name: Description
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+    - Name: Label1
+      Type: ReportLabel
+      Children:
+      - Name: Width
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 63.5
+        Children:
+        - Name: EngineeringUnits
+          Type: EUInformationType
+          DataType: EUInformation
+          Children:
+          - Name: UnitId
+            Type: BaseDataVariableType
+            DataType: Int32
+            AccessLevel: Read
+            Value: 5066068
+          - Name: DisplayName
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"LocaleId":"en-US","Text":"Configuration Product Training"}
+      - Name: LeftMargin
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 10.583333015441895
+        Children:
+        - Name: EngineeringUnits
+          Type: EUInformationType
+          DataType: EUInformation
+          Children:
+          - Name: UnitId
+            Type: BaseDataVariableType
+            DataType: Int32
+            AccessLevel: Read
+            Value: 5066068
+          - Name: DisplayName
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+      - Name: TopMargin
+        Type: BaseDataVariableType
+        DataType: Size
+        Children:
+        - Name: EngineeringUnits
+          Type: EUInformationType
+          DataType: EUInformation
+          Children:
+          - Name: UnitId
+            Type: BaseDataVariableType
+            DataType: Int32
+            AccessLevel: Read
+            Value: 5066068
+          - Name: DisplayName
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        Value: 2
+      - Name: BottomMargin
+        Type: BaseDataVariableType
+        DataType: Size
+        Children:
+        - Name: EngineeringUnits
+          Type: EUInformationType
+          DataType: EUInformation
+          Children:
+          - Name: UnitId
+            Type: BaseDataVariableType
+            DataType: Int32
+            AccessLevel: Read
+            Value: 5066068
+          - Name: DisplayName
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+    - Name: Image1
+      Type: ReportImage
+      Children:
+      - Name: Path
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=24;%PROJECTDIR%/Images/FT-Optix-logo-black.svg"
+      - Name: Width
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 21.16666603088379
+        Children:
+        - Name: EngineeringUnits
+          Type: EUInformationType
+          DataType: EUInformation
+          Children:
+          - Name: UnitId
+            Type: BaseDataVariableType
+            DataType: Int32
+            AccessLevel: Read
+            Value: 5066068
+          - Name: DisplayName
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+      - Name: Height
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 15.875
+        Children:
+        - Name: EngineeringUnits
+          Type: EUInformationType
+          DataType: EUInformation
+          Children:
+          - Name: UnitId
+            Type: BaseDataVariableType
+            DataType: Int32
+            AccessLevel: Read
+            Value: 5066068
+          - Name: DisplayName
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+      - Name: LeftMargin
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 174.625
+        Children:
+        - Name: EngineeringUnits
+          Type: EUInformationType
+          DataType: EUInformation
+          Children:
+          - Name: UnitId
+            Type: BaseDataVariableType
+            DataType: Int32
+            AccessLevel: Read
+            Value: 5066068
+          - Name: DisplayName
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+      - Name: TopMargin
+        Type: BaseDataVariableType
+        DataType: Size
+        Children:
+        - Name: EngineeringUnits
+          Type: EUInformationType
+          DataType: EUInformation
+          Children:
+          - Name: UnitId
+            Type: BaseDataVariableType
+            DataType: Int32
+            AccessLevel: Read
+            Value: 5066068
+          - Name: DisplayName
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        Value: 2
+      - Name: BottomMargin
+        Type: BaseDataVariableType
+        DataType: Size
+        Children:
+        - Name: EngineeringUnits
+          Type: EUInformationType
+          DataType: EUInformation
+          Children:
+          - Name: UnitId
+            Type: BaseDataVariableType
+            DataType: Int32
+            AccessLevel: Read
+            Value: 5066068
+          - Name: DisplayName
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+    - Name: PolyLine1
+      Type: PolyLine
+      Children:
+      - Name: LineThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 1.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        Value: 770.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        Value: 10.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        Value: 60.0
+      - Name: Path
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "M 0.000000 0.000000 L 170.000000 0.000000"
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+  - Name: Sections
+    Type: ReportColumnLayout
+    Children:
+    - Name: Charts&Trends
+      Type: PanelSection
+      Children:
+      - Name: Height
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 213.5187530517578
+        Children:
+        - Name: EngineeringUnits
+          Type: EUInformationType
+          DataType: EUInformation
+          Children:
+          - Name: UnitId
+            Type: BaseDataVariableType
+            DataType: Int32
+            AccessLevel: Read
+            Value: 5066068
+          - Name: DisplayName
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+      - Name: Trend
+        Type: ReportTrend
+        Children:
+        - Name: Pens
+          Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1129
+          Direction: Forward
+        - Name: XAxis
+          Type: DateTimeAxis
+          Children:
+          - Name: Follow
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Window
+            Type: BaseDataVariableType
+            DataType: Duration
+            Value: "0:00:00:05.0000000"
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Time
+            Type: BaseDataVariableType
+            DataType: DateTime
+        - Name: YAxis
+          Type: ValueAxis
+          Children:
+          - Name: Position
+            Type: BaseDataVariableType
+            DataType: HorizontalPositionEnum
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -100.0
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: 100.0
+          - Name: AutoScale
+            Type: BaseDataVariableType
+            DataType: Boolean
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+        - Name: LegendVisible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Class: Reference
+          Target: ns=5;i=1201
+          Direction: Forward
+        - Name: TimeRanges
+          Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1209
+          Direction: Forward
+        - Name: Width
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 171.9791717529297
+          Children:
+          - Name: EngineeringUnits
+            Type: EUInformationType
+            DataType: EUInformation
+            Children:
+            - Name: UnitId
+              Type: BaseDataVariableType
+              DataType: Int32
+              AccessLevel: Read
+              Value: 5066068
+            - Name: DisplayName
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Description
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+        - Name: Height
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 70.90833282470703
+          Children:
+          - Name: EngineeringUnits
+            Type: EUInformationType
+            DataType: EUInformation
+            Children:
+            - Name: UnitId
+              Type: BaseDataVariableType
+              DataType: Int32
+              AccessLevel: Read
+              Value: 5066068
+            - Name: DisplayName
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Description
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+        - Name: ReferenceTimeZone
+          Type: BaseDataVariableType
+          DataType: ReferenceTimeZone
+          Value: 1
+        - Name: LeftMargin
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 23.8125
+          Children:
+          - Name: EngineeringUnits
+            Type: EUInformationType
+            DataType: EUInformation
+            Children:
+            - Name: UnitId
+              Type: BaseDataVariableType
+              DataType: Int32
+              AccessLevel: Read
+              Value: 5066068
+            - Name: DisplayName
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Description
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+        - Name: TopMargin
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 16.40416717529297
+          Children:
+          - Name: EngineeringUnits
+            Type: EUInformationType
+            DataType: EUInformation
+            Children:
+            - Name: UnitId
+              Type: BaseDataVariableType
+              DataType: Int32
+              AccessLevel: Read
+              Value: 5066068
+            - Name: DisplayName
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Description
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+        - Name: RightMargin
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 46.037498474121094
+          Children:
+          - Name: EngineeringUnits
+            Type: EUInformationType
+            DataType: EUInformation
+            Children:
+            - Name: UnitId
+              Type: BaseDataVariableType
+              DataType: Int32
+              AccessLevel: Read
+              Value: 5066068
+            - Name: DisplayName
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Description
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+        - Name: Model
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: ItemKind
+            Type: PropertyType
+            DataType: NodeId
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+      - Name: PieChart
+        Type: ReportPieChart
+        Children:
+        - Name: Model
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/OptixAdvancedCPT/Model/Lesson15/PieChart"
+          Children:
+          - Name: ItemKind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Objects/OptixAdvancedCPT/Model/Lesson15/PieChart/Idle"
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+        - Name: Label
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Item}@BrowseName"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Double
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Item}@Value"
+        - Class: Reference
+          Target: ns=5;i=1104
+          Direction: Forward
+        - Name: Item
+          Type: Alias
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Objects/OptixAdvancedCPT/Model/Lesson15/PieChart/Idle"
+        - Name: LeftMargin
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 29.10416603088379
+          Children:
+          - Name: EngineeringUnits
+            Type: EUInformationType
+            DataType: EUInformation
+            Children:
+            - Name: UnitId
+              Type: BaseDataVariableType
+              DataType: Int32
+              AccessLevel: Read
+              Value: 5066068
+            - Name: DisplayName
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Description
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+        - Name: TopMargin
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 137.5833282470703
+          Children:
+          - Name: EngineeringUnits
+            Type: EUInformationType
+            DataType: EUInformation
+            Children:
+            - Name: UnitId
+              Type: BaseDataVariableType
+              DataType: Int32
+              AccessLevel: Read
+              Value: 5066068
+            - Name: DisplayName
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Description
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+        - Name: Height
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 50.27083206176758
+          Children:
+          - Name: EngineeringUnits
+            Type: EUInformationType
+            DataType: EUInformation
+            Children:
+            - Name: UnitId
+              Type: BaseDataVariableType
+              DataType: Int32
+              AccessLevel: Read
+              Value: 5066068
+            - Name: DisplayName
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Description
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+        - Name: Width
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 52.91666793823242
+          Children:
+          - Name: EngineeringUnits
+            Type: EUInformationType
+            DataType: EUInformation
+            Children:
+            - Name: UnitId
+              Type: BaseDataVariableType
+              DataType: Int32
+              AccessLevel: Read
+              Value: 5066068
+            - Name: DisplayName
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Description
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+      - Name: HistogramChart
+        Type: ReportHistogramChart
+        Children:
+        - Name: Model
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/OptixAdvancedCPT/Model/Lesson15/HistogramChart"
+          Children:
+          - Name: ItemKind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Objects/OptixAdvancedCPT/Model/Lesson15/HistogramChart/Minimal"
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+        - Name: Label
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Item}@BrowseName"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Double
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Item}@Value"
+        - Class: Reference
+          Target: ns=5;i=1105
+          Direction: Forward
+        - Name: Item
+          Type: Alias
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Objects/OptixAdvancedCPT/Model/Lesson15/HistogramChart/Minimal"
+        - Name: LeftMargin
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 113.77083587646484
+          Children:
+          - Name: EngineeringUnits
+            Type: EUInformationType
+            DataType: EUInformation
+            Children:
+            - Name: UnitId
+              Type: BaseDataVariableType
+              DataType: Int32
+              AccessLevel: Read
+              Value: 5066068
+            - Name: DisplayName
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Description
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+        - Name: TopMargin
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 123.82499694824219
+          Children:
+          - Name: EngineeringUnits
+            Type: EUInformationType
+            DataType: EUInformation
+            Children:
+            - Name: UnitId
+              Type: BaseDataVariableType
+              DataType: Int32
+              AccessLevel: Read
+              Value: 5066068
+            - Name: DisplayName
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Description
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+        - Name: Height
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 61.38333511352539
+          Children:
+          - Name: EngineeringUnits
+            Type: EUInformationType
+            DataType: EUInformation
+            Children:
+            - Name: UnitId
+              Type: BaseDataVariableType
+              DataType: Int32
+              AccessLevel: Read
+              Value: 5066068
+            - Name: DisplayName
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Description
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+        - Name: Width
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 76.72916412353516
+          Children:
+          - Name: EngineeringUnits
+            Type: EUInformationType
+            DataType: EUInformation
+            Children:
+            - Name: UnitId
+              Type: BaseDataVariableType
+              DataType: Int32
+              AccessLevel: Read
+              Value: 5066068
+            - Name: DisplayName
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Description
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+        - Name: ValueAxisVisible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: ValueVisible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+      - Name: PolyLine1
+        Type: PolyLine
+        Children:
+        - Name: LineThickness
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 1.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          Value: 770.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          Value: 10.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          Value: 34.0
+        - Name: Path
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "M 0.000000 0.000000 L 170.000000 0.000000"
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          Value: 14.0
+      - Name: PolyLine2
+        Type: PolyLine
+        Children:
+        - Name: LineThickness
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 1.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          Value: 770.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          Value: 10.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          Value: 450.0
+        - Name: Path
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "M 0.000000 0.000000 L 170.000000 0.000000"
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          Value: 14.0
+      - Name: PolyLine3
+        Type: PolyLine
+        Children:
+        - Name: LineThickness
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 1.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          Value: 770.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          Value: 10.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          Value: 770.0
+        - Name: Path
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "M 0.000000 0.000000 L 170.000000 0.000000"
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          Value: 14.0
+      - Name: Label1
+        Type: ReportLabel
+        Children:
+        - Name: Width
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 50.27083206176758
+          Children:
+          - Name: EngineeringUnits
+            Type: EUInformationType
+            DataType: EUInformation
+            Children:
+            - Name: UnitId
+              Type: BaseDataVariableType
+              DataType: Int32
+              AccessLevel: Read
+              Value: 5066068
+            - Name: DisplayName
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Description
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"Trend Chart"}
+        - Name: LeftMargin
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 7.9375
+          Children:
+          - Name: EngineeringUnits
+            Type: EUInformationType
+            DataType: EUInformation
+            Children:
+            - Name: UnitId
+              Type: BaseDataVariableType
+              DataType: Int32
+              AccessLevel: Read
+              Value: 5066068
+            - Name: DisplayName
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Description
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+        - Name: TopMargin
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 5.291666507720947
+          Children:
+          - Name: EngineeringUnits
+            Type: EUInformationType
+            DataType: EUInformation
+            Children:
+            - Name: UnitId
+              Type: BaseDataVariableType
+              DataType: Int32
+              AccessLevel: Read
+              Value: 5066068
+            - Name: DisplayName
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Description
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+      - Name: Label2
+        Type: ReportLabel
+        Children:
+        - Name: Width
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 50.27083206176758
+          Children:
+          - Name: EngineeringUnits
+            Type: EUInformationType
+            DataType: EUInformation
+            Children:
+            - Name: UnitId
+              Type: BaseDataVariableType
+              DataType: Int32
+              AccessLevel: Read
+              Value: 5066068
+            - Name: DisplayName
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Description
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"Pie and Histogram Chart"}
+        - Name: LeftMargin
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 7.9375
+          Children:
+          - Name: EngineeringUnits
+            Type: EUInformationType
+            DataType: EUInformation
+            Children:
+            - Name: UnitId
+              Type: BaseDataVariableType
+              DataType: Int32
+              AccessLevel: Read
+              Value: 5066068
+            - Name: DisplayName
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Description
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+        - Name: TopMargin
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 113.77083587646484
+          Children:
+          - Name: EngineeringUnits
+            Type: EUInformationType
+            DataType: EUInformation
+            Children:
+            - Name: UnitId
+              Type: BaseDataVariableType
+              DataType: Int32
+              AccessLevel: Read
+              Value: 5066068
+            - Name: DisplayName
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Description
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+    - Name: PageBreak1
+      Type: PageBreak
+  - Name: Footer
+    Type: Panel
+    Children:
+    - Name: Height
+      Type: BaseDataVariableType
+      DataType: Size
+      Value: 20.0
+      Children:
+      - Name: EngineeringUnits
+        Type: EUInformationType
+        DataType: EUInformation
+        Children:
+        - Name: UnitId
+          Type: BaseDataVariableType
+          DataType: Int32
+          AccessLevel: Read
+          Value: 5066068
+        - Name: DisplayName
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+        - Name: Description
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+    - Name: Label1
+      Type: ReportLabel
+      Children:
+      - Name: Width
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 54.50416564941406
+        Children:
+        - Name: EngineeringUnits
+          Type: EUInformationType
+          DataType: EUInformation
+          Children:
+          - Name: UnitId
+            Type: BaseDataVariableType
+            DataType: Int32
+            AccessLevel: Read
+            Value: 5066068
+          - Name: DisplayName
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Format
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            Value: {"LocaleId":"en-US","Text":"Page {0} of {1}"}
+          - Name: ns=3;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../PageNumber"
+          - Name: ns=3;Source1
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../PageCount"
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        Value: 2
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        Value: 2
+      - Name: TextHorizontalAlignment
+        Type: BaseVariableType
+        DataType: TextHorizontalAlignment
+        Value: 1
+    - Name: PolyLine1
+      Type: PolyLine
+      Children:
+      - Name: LineThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 1.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        Value: 170.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        Value: 50.0
+      - Name: Path
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "M 0.000000 0.000000 L 170.000000 0.000000"
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        Value: 3
+    - Name: Label2
+      Type: ReportLabel
+      Children:
+      - Name: Width
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 54.50416564941406
+        Children:
+        - Name: EngineeringUnits
+          Type: EUInformationType
+          DataType: EUInformation
+          Children:
+          - Name: UnitId
+            Type: BaseDataVariableType
+            DataType: Int32
+            AccessLevel: Read
+            Value: 5066068
+          - Name: DisplayName
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"LocaleId":"en-US","Text":"Rockwell Automation Inc."}
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        Value: 2
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        Value: 1
+      - Name: TextHorizontalAlignment
+        Type: BaseVariableType
+        DataType: TextHorizontalAlignment
+        Value: 1
+      - Name: LeftMargin
+        Type: BaseDataVariableType
+        DataType: Size
+        Children:
+        - Name: EngineeringUnits
+          Type: EUInformationType
+          DataType: EUInformation
+          Children:
+          - Name: UnitId
+            Type: BaseDataVariableType
+            DataType: Int32
+            AccessLevel: Read
+            Value: 5066068
+          - Name: DisplayName
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+      - Name: RightMargin
+        Type: BaseDataVariableType
+        DataType: Size
+        Children:
+        - Name: EngineeringUnits
+          Type: EUInformationType
+          DataType: EUInformation
+          Children:
+          - Name: UnitId
+            Type: BaseDataVariableType
+            DataType: Int32
+            AccessLevel: Read
+            Value: 5066068
+          - Name: DisplayName
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+      - Name: BottomMargin
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 3.174999952316284
+        Children:
+        - Name: EngineeringUnits
+          Type: EUInformationType
+          DataType: EUInformation
+          Children:
+          - Name: UnitId
+            Type: BaseDataVariableType
+            DataType: Int32
+            AccessLevel: Read
+            Value: 5066068
+          - Name: DisplayName
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+  - Class: Reference
+    Target: ns=25;i=16
+    Direction: Forward
+  - Name: PDFGeneratedHandler1
+    Type: EventHandler
+    Children:
+    - Name: ListenEventType
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/EventTypes/BaseEventType/GeneratePdfCompletedEvent"
+    - Name: MethodsToCall
+      Type: BaseObjectType
+      Children:
+      - Name: MethodContainer1
+        Type: BaseObjectType
+        Children:
+        - Name: ns=3;ObjectPointer
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../Commands/VariableCommands@NodeId"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+        - Name: ns=3;Method
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Set"
+        - Name: InputArguments
+          Type: BaseObjectType
+          Children:
+          - Name: VariableToModify
+            Type: BaseDataVariableType
+            DataType: VariablePointer
+            Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
+            Value: "/Objects/OptixAdvancedCPT/Model/Lesson15/reportGenerated"
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
+            Value: true
+          - Name: ArrayIndex
+            Type: BaseDataVariableType
+            DataType: UInt32
+            Description: {"NamespaceIndex":3,"TextId":"SetArrayIndexDescription"}
+            ValueRank: ScalarOrOneDimension
+    - Name: EventArguments
+      Type: GeneratePdfCompletedEvent
+      Children:
+      - Name: OutputPath
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        ReferenceType: HasProperty
+      - Name: Result
+        Type: BaseDataVariableType
+        DataType: GeneratePdfCompletedResult
+        ReferenceType: HasProperty
+      - Name: OperationId
+        Type: BaseDataVariableType
+        DataType: Guid
+        ReferenceType: HasProperty
+      - Name: EventId
+        Type: PropertyType
+        DataType: ByteString
+      - Name: EventType
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceNode
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceName
+        Type: PropertyType
+        DataType: String
+      - Name: Time
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: ReceiveTime
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: Message
+        Type: PropertyType
+        DataType: LocalizedText
+      - Name: Severity
+        Type: PropertyType
+        DataType: UInt16

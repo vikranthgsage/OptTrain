@@ -1,0 +1,19 @@
+Name: Lesson8
+Type: FolderType
+Children:
+- File: ChangedEvent/ChangedEvent.yaml
+- File: TransitionedEvent/TransitionedEvent.yaml
+- File: RangeTransitionedEvent/RangeTransitionedEvent.yaml
+- Name: localMethods
+  Type: NetLogic
+  Children:
+  - Name: scoreLabel
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0 ms"
+  - Class: Method
+    Name: ResetCounter
+  - Class: Method
+    Name: StartCounter
+  - Class: Method
+    Name: StopCounter

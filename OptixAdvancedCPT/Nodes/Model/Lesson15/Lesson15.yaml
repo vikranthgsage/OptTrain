@@ -1,0 +1,10 @@
+Name: Lesson15
+Type: FolderType
+Children:
+- File: Trend/Trend.yaml
+- File: PieChart/PieChart.yaml
+- File: HistogramChart/HistogramChart.yaml
+- Name: reportGenerated
+  Id: g=d91e9a4231c9eb6a1021d4d8bbc3361c
+  Type: BaseDataVariableType
+  DataType: Boolean
