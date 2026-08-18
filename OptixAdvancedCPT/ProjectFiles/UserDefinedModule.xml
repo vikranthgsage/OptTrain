@@ -209,12 +209,22 @@
         </TypeMapping>
         <TypeMapping>
             <TargetType>
+                <NodeId namespaceUri="OptixAdvancedCPT" guid="16ae4aa67b68d5a6d0246071284b5124" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
                 <NodeId namespaceUri="OptixAdvancedCPT" guid="a99044fe66a2a7ec7e4c0d274d2783dd" />
             </TargetType>
         </TypeMapping>
         <TypeMapping>
             <TargetType>
                 <NodeId namespaceUri="OptixAdvancedCPT" guid="85ad6743ec99d6c2f04dbf1f13b6d7fe" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="OptixAdvancedCPT" guid="025af1d4fede053818b14808d2687d4a" />
             </TargetType>
         </TypeMapping>
         <TypeMapping>

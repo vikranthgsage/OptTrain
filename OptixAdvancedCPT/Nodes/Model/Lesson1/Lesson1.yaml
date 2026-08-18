@@ -1,2 +1,59 @@
 Name: Lesson1
 Type: FolderType
+Children:
+- Name: NavPos
+  Id: g=16ae4aa67b68d5a6d0246071284b5124
+  Supertype: BaseObjectType
+  Children:
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Description
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: NodeId
+    Type: BaseDataVariableType
+    DataType: NodeId
+  - Name: Variable1
+    Type: BaseDataVariableType
+    DataType: Int32
+- Name: NavPos1
+  Id: g=8204763e950ff05c22981ecfe777ee7c
+  Type: NavPos
+  Children:
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Screen 1"
+  - Name: Description
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Reusable Object"
+  - Name: NodeId
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: "/Objects/OptixAdvancedCPT/PreBuiltLabContent/Panels/Lesson1_Panel1"
+  - Name: Variable1
+    Type: BaseDataVariableType
+    DataType: Int32
+- Name: NavPos2
+  Id: g=2a408b5b3072e29c666964e687492d58
+  Type: NavPos
+  Children:
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Screen 2"
+  - Name: Description
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Nav Tile"
+  - Name: NodeId
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: "/Objects/OptixAdvancedCPT/PreBuiltLabContent/Panels/Lesson1_Panel2"
+  - Name: Variable1
+    Type: BaseDataVariableType
+    DataType: Int32

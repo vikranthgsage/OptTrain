@@ -282,7 +282,7 @@ Children:
       Value: "/Objects/OptixAdvancedCPT/PreBuiltLabContent/Types/Navigation_Pos"
 - Name: lessonPanel
   Id: g=21b8c8341a293f49b2d2dee9e1bc9821
-  Supertype: Panel
+  Supertype: Screen
   ReferenceType: HasComponent
   Children:
   - Name: Width
@@ -295,16 +295,6 @@ Children:
     DataType: Size
     ModellingRule: Optional
     Value: 700.0
-  - Name: HorizontalAlignment
-    Type: BaseVariableType
-    DataType: HorizontalAlignment
-    ModellingRule: Optional
-    Value: 3
-  - Name: VerticalAlignment
-    Type: BaseVariableType
-    DataType: VerticalAlignment
-    ModellingRule: Optional
-    Value: 3
   - Name: Rectangle1
     Type: Rectangle
     Children:

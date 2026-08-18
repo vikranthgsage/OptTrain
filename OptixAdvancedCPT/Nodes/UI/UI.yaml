@@ -301,3 +301,4 @@ Children:
     Value: ["*"]
 - File: Keyboards/Keyboards.yaml
 - File: Stylesheets/Stylesheets.yaml
+- File: Widgets/Widgets.yaml
