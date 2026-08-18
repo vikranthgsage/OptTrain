@@ -1,2 +1,6 @@
 Name: Lesson6
 Type: FolderType
+Children:
+- Name: ModelVariableLesson6
+  Type: BaseDataVariableType
+  DataType: Int32

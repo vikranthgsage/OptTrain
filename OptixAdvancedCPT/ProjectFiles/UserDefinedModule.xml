@@ -104,6 +104,11 @@
         </TypeMapping>
         <TypeMapping>
             <TargetType>
+                <NodeId namespaceUri="OptixAdvancedCPT" guid="a2aafb8f66a0343e5e520670f11ca4ec" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
                 <NodeId namespaceUri="OptixAdvancedCPT" guid="18095f0b66edc8b879bd5c97f2836cfe" />
             </TargetType>
         </TypeMapping>

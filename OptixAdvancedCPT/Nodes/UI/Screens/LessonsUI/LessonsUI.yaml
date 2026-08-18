@@ -3088,6 +3088,17 @@ Children:
           - Name: Text
             Type: BaseDataVariableType
             DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/OptixAdvancedCPT/Model/Lesson6/ModelVariableLesson6"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
           - Name: Width
             Type: BaseVariableType
             DataType: Size
@@ -3282,6 +3293,17 @@ Children:
           - Name: Text
             Type: BaseDataVariableType
             DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Session}/SessionVariableLesson6"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
           - Name: Width
             Type: BaseVariableType
             DataType: Size
@@ -3461,6 +3483,17 @@ Children:
           - Name: Text
             Type: BaseDataVariableType
             DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../ObjectLesson6/PanelVariableLesson6"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
           - Name: Width
             Type: BaseVariableType
             DataType: Size
@@ -3678,6 +3711,12 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 20.0
+  - Name: ObjectLesson6
+    Type: BaseObjectType
+    Children:
+    - Name: PanelVariableLesson6
+      Type: BaseDataVariableType
+      DataType: Int32
 - Name: Lesson7
   Id: g=85ad6743ec99d6c2f04dbf1f13b6d7fe
   Supertype: lessonPanel
