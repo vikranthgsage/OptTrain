@@ -2240,6 +2240,7 @@ Children:
       - Name: AutoScale
         Type: BaseDataVariableType
         DataType: Boolean
+        Value: true
       - Name: Interactive
         Type: BaseDataVariableType
         DataType: Boolean
@@ -2315,7 +2316,7 @@ Children:
           DataType: LocalizedText
           ReferenceType: HasParameter
           ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"SELECT * FROM Lesson4DataLogger WHERE(LocalTimeStamp BETWEEN{0:sql_literal} AND {1:sql_literal})"}
+          Value: {"LocaleId":"en-US","Text":"SELECT * FROM Lesson4DataLogger WHERE(LocalTimestamp BETWEEN{0:sql_literal} AND {1:sql_literal})"}
         - Name: ns=3;Source0
           Type: BaseDataVariableType
           DataType: BaseDataType
