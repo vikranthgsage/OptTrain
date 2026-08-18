@@ -8,6 +8,7 @@ using FTOptix.EventLogger;
 using FTOptix.Report;
 using FTOptix.RAEtherNetIP;
 using FTOptix.CommunicationDriver;
+using FTOptix.Alarm;
 using OpcUa = UAManagedCore.OpcUa;
 
 public class UIPopulator : FTOptix.NetLogic.BaseNetLogic

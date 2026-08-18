@@ -18,6 +18,7 @@ using FTOptix.System;
 using FTOptix.AuditSigning;
 using FTOptix.EventLogger;
 using FTOptix.Report;
+using FTOptix.Alarm;
 #endregion
 
 [CustomBehavior]
