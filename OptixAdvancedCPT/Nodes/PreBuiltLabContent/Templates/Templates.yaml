@@ -1122,6 +1122,14 @@ Children:
             Type: PropertyType
             DataType: NodeId
             Value: "/Objects/OptixAdvancedCPT/PreBuiltLabContent/Types/Navigation_Pos"
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
