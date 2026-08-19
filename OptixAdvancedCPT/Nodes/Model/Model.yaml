@@ -17,3 +17,72 @@ Children:
 - File: Lesson14/Lesson14.yaml
 - File: Lesson15/Lesson15.yaml
 - File: Lesson17/Lesson17.yaml
+- Name: Motor
+  Type: BaseObjectType
+  Children:
+  - Name: Alarms
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ValueRank: OneDimension
+    ArrayDimensions: [16]
+  - Name: AnalogVariable1
+    Type: AnalogItemType
+    DataType: Float
+    Children:
+    - Name: EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseDataVariableType
+        DataType: Double
+      - Name: High
+        Type: BaseDataVariableType
+        DataType: Double
+  - Name: DigitalAlarm1
+    Type: OffNormalAlarmController
+    Children:
+    - Name: NormalStateValue
+      Type: BaseDataVariableType
+      DataType: Double
+    - Name: InputValue
+      Type: BaseDataVariableType
+      DataType: Double
+    - Name: LastEvent
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+    - Class: Reference
+      Target: ns=31;i=81
+      Direction: Forward
+    - Class: Reference
+      Target: ns=31;i=82
+      Direction: Forward
+    - Class: Reference
+      Target: ns=31;i=83
+      Direction: Forward
+    - Class: Reference
+      Target: ns=31;i=130
+      Direction: Forward
+    - Class: Reference
+      Target: ns=31;i=135
+      Direction: Forward
+    - Class: Reference
+      Target: ns=31;i=132
+      Direction: Forward
+    - Class: Reference
+      Target: ns=31;i=146
+      Direction: Forward
+    - Class: Reference
+      Target: ns=31;i=148
+      Direction: Forward
+    - Class: Reference
+      Target: ns=31;i=150
+      Direction: Forward
+    - Class: Reference
+      Target: ns=31;i=152
+      Direction: Forward
+    - Class: Reference
+      Target: ns=31;i=154
+      Direction: Forward

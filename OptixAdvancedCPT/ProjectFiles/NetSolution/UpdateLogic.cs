@@ -19,6 +19,7 @@ using FTOptix.Report;
 using FTOptix.RAEtherNetIP;
 using FTOptix.CommunicationDriver;
 using FTOptix.Alarm;
+using FTOptix.EventLogger;
 #endregion
 
 public class UpdateLogic : BaseNetLogic

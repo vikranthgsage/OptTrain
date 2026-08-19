@@ -136,6 +136,54 @@ Children:
         - Name: Category
           Type: StoreColumn
           DataType: BaseDataType
+    - Name: SigningEventLogger
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=9;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: ActionTimeStamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: SourceName
+          Type: StoreColumn
+          DataType: String
+        - Name: OldValue
+          Type: StoreColumn
+          DataType: String
+        - Name: NewValue
+          Type: StoreColumn
+          DataType: String
+        - Name: WorkflowType
+          Type: StoreColumn
+          DataType: WorkflowType
+        - Name: SignResult
+          Type: StoreColumn
+          DataType: SignResult
+        - Name: ClientUserId
+          Type: StoreColumn
+          DataType: String
+        - Name: ClientUserNote
+          Type: StoreColumn
+          DataType: String
+        - Name: SecondClientUserNote
+          Type: StoreColumn
+          DataType: String
+        - Name: SecondClientUserId
+          Type: StoreColumn
+          DataType: String
   - Class: Reference
     Target: ns=21;i=30
     Direction: Forward
