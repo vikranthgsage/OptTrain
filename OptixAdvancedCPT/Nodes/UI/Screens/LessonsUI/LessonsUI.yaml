@@ -13401,6 +13401,7 @@ Children:
       - Name: Model
         Type: NodePointer
         DataType: NodeId
+        Value: "/Objects/OptixAdvancedCPT/DataStores/EmbeddedDatabase"
         Children:
         - Name: ItemKind
           Type: PropertyType
@@ -13411,8 +13412,118 @@ Children:
       - Name: Query
         Type: BaseDataVariableType
         DataType: String
+        Value: "SELECT * FROM \"Lesson13Data\""
       - Name: Columns
         Type: BaseObjectType
+        Children:
+        - Name: ItemName
+          Type: DataGridColumn
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"ItemName"}
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/ItemName"
+          - Name: DataItemTemplate
+            Type: DataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/ItemName"
+        - Name: Quantity
+          Type: DataGridColumn
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"Quantity"}
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/Quantity"
+          - Name: DataItemTemplate
+            Type: DataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/Quantity"
+        - Name: Category
+          Type: DataGridColumn
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"Category"}
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/Category"
+          - Name: DataItemTemplate
+            Type: DataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/Category"
       - Name: SelectedItem
         Type: NodePointer
         DataType: NodeId
@@ -13645,9 +13756,6 @@ Children:
           - Name: Severity
             Type: PropertyType
             DataType: UInt16
-      - Name: SortOrder
-        Type: BaseDataVariableType
-        DataType: SortOrderEnum
     - Name: HL
       Type: RowLayout
       Children:
@@ -13946,6 +14054,105 @@ Children:
                   Type: DynamicLink
                   DataType: NodePath
                   Value: "../../../../Category/SelectedValue"
+          - Name: MouseClickEventHandler1
+            Type: EventHandler
+            Children:
+            - Name: ListenEventType
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+            - Name: MethodsToCall
+              Type: BaseObjectType
+              Children:
+              - Name: MethodContainer1
+                Type: BaseObjectType
+                Children:
+                - Name: ns=3;ObjectPointer
+                  Type: NodePointer
+                  DataType: NodeId
+                  Value: "/Objects/OptixAdvancedCPT/DataStores/EmbeddedDatabase/Tables/Lesson13Data"
+                  Children:
+                  - Name: Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: ns=3;Method
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "Insert"
+                - Name: InputArguments
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ColumnNames
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Description: {"NamespaceIndex":9,"TextId":"InsertColumnNamesDescription"}
+                    ValueRank: OneDimension
+                    ArrayDimensions: [0]
+                    Value: ["ItemName","Quantity","Category"]
+                  - Name: Values
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    Description: {"NamespaceIndex":9,"TextId":"InsertValuesDescription"}
+                    ValueRank: OneOrMoreDimensions
+                    ArrayDimensions: [0,0]
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../../DataInsert"
+              - Name: MethodContainer2
+                Type: BaseObjectType
+                Children:
+                - Name: ns=3;ObjectPointer
+                  Type: NodePointer
+                  DataType: NodeId
+                  Children:
+                  - Name: Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/ObjectTypes/BaseObjectType"
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../../../../Data@NodeId"
+                    Children:
+                    - Name: Mode
+                      Type: BaseVariableType
+                      DataType: DynamicLinkMode
+                      ModellingRule: Optional
+                      Value: 2
+                - Name: ns=3;Method
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "Refresh"
+            - Name: EventArguments
+              Type: MouseClickEvent
+              Children:
+              - Name: EventId
+                Type: PropertyType
+                DataType: ByteString
+              - Name: EventType
+                Type: PropertyType
+                DataType: NodeId
+              - Name: SourceNode
+                Type: PropertyType
+                DataType: NodeId
+              - Name: SourceName
+                Type: PropertyType
+                DataType: String
+              - Name: Time
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ReceiveTime
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: Message
+                Type: PropertyType
+                DataType: LocalizedText
+              - Name: Severity
+                Type: PropertyType
+                DataType: UInt16
         - Name: itemLabel
           Type: Label
           Children:
@@ -14464,6 +14671,143 @@ Children:
                   Type: DynamicLink
                   DataType: NodePath
                   Value: "../../../../Item/Text"
+          - Name: MouseClickEventHandler1
+            Type: EventHandler
+            Children:
+            - Name: ListenEventType
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+            - Name: MethodsToCall
+              Type: BaseObjectType
+              Children:
+              - Name: MethodContainer1
+                Type: BaseObjectType
+                Children:
+                - Name: ns=3;ObjectPointer
+                  Type: NodePointer
+                  DataType: NodeId
+                  Value: "/Objects/OptixAdvancedCPT/DataStores/EmbeddedDatabase"
+                  Children:
+                  - Name: Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: ns=3;Method
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "Query"
+                - Name: InputArguments
+                  Type: BaseObjectType
+                  Children:
+                  - Name: Query
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Description: {"NamespaceIndex":9,"TextId":"QueryQueryDescription"}
+                    Children:
+                    - Name: StringFormatter1
+                      Type: StringFormatter
+                      Children:
+                      - Name: Format
+                        Type: BaseDataVariableType
+                        DataType: LocalizedText
+                        ReferenceType: HasParameter
+                        ModellingRule: Optional
+                        Value: {"LocaleId":"en-US","Text":"UPDATE \"Lesson13Data\" SET Category= {#Category:sql_literal}, Quantity= {#Quantity:sql_literal} WHERE ItemName= {#ItemName:sql_literal}"}
+                      - Name: ns=3;SourceCategory
+                        Type: BaseDataVariableType
+                        DataType: BaseDataType
+                        ReferenceType: HasSource
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "../../../../../../../../Category/SelectedValue"
+                      - Name: ns=3;SourceQuantity
+                        Type: BaseDataVariableType
+                        DataType: BaseDataType
+                        ReferenceType: HasSource
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "../../../../../../../../Quantity/Value"
+                      - Name: ns=3;SourceItemName
+                        Type: BaseDataVariableType
+                        DataType: BaseDataType
+                        ReferenceType: HasSource
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "../../../../../../../../Item/Text"
+                - Name: OutputArguments
+                  Type: BaseObjectType
+                  Children:
+                  - Name: Header
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Description: {"NamespaceIndex":9,"TextId":"QueryHeaderDescription"}
+                    ValueRank: OneDimension
+                    ArrayDimensions: [0]
+                  - Name: ResultSet
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    Description: {"NamespaceIndex":9,"TextId":"QueryResultSetDescription"}
+                    ValueRank: OneOrMoreDimensions
+                    ArrayDimensions: [0,0]
+              - Name: MethodContainer2
+                Type: BaseObjectType
+                Children:
+                - Name: ns=3;ObjectPointer
+                  Type: NodePointer
+                  DataType: NodeId
+                  Children:
+                  - Name: Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/ObjectTypes/BaseObjectType"
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../../../../Data@NodeId"
+                    Children:
+                    - Name: Mode
+                      Type: BaseVariableType
+                      DataType: DynamicLinkMode
+                      ModellingRule: Optional
+                      Value: 2
+                - Name: ns=3;Method
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "Refresh"
+            - Name: EventArguments
+              Type: MouseClickEvent
+              Children:
+              - Name: EventId
+                Type: PropertyType
+                DataType: ByteString
+              - Name: EventType
+                Type: PropertyType
+                DataType: NodeId
+              - Name: SourceNode
+                Type: PropertyType
+                DataType: NodeId
+              - Name: SourceName
+                Type: PropertyType
+                DataType: String
+              - Name: Time
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ReceiveTime
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: Message
+                Type: PropertyType
+                DataType: LocalizedText
+              - Name: Severity
+                Type: PropertyType
+                DataType: UInt16
         - Name: itemLabel
           Type: Label
           Children:
@@ -14767,6 +15111,125 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             Value: true
+          - Name: MouseClickEventHandler1
+            Type: EventHandler
+            Children:
+            - Name: ListenEventType
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+            - Name: MethodsToCall
+              Type: BaseObjectType
+              Children:
+              - Name: MethodContainer1
+                Type: BaseObjectType
+                Children:
+                - Name: ns=3;ObjectPointer
+                  Type: NodePointer
+                  DataType: NodeId
+                  Value: "/Objects/OptixAdvancedCPT/DataStores/EmbeddedDatabase"
+                  Children:
+                  - Name: Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: ns=3;Method
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "Query"
+                - Name: InputArguments
+                  Type: BaseObjectType
+                  Children:
+                  - Name: Query
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Description: {"NamespaceIndex":9,"TextId":"QueryQueryDescription"}
+                    Children:
+                    - Name: StringFormatter1
+                      Type: StringFormatter
+                      Children:
+                      - Name: Format
+                        Type: BaseDataVariableType
+                        DataType: LocalizedText
+                        ReferenceType: HasParameter
+                        ModellingRule: Optional
+                        Value: {"LocaleId":"en-US","Text":"DELETE FROM \"Lesson13Data\" WHERE ItemName= {#ItemName:sql_literal}"}
+                      - Name: ns=3;SourceItemName
+                        Type: BaseDataVariableType
+                        DataType: BaseDataType
+                        ReferenceType: HasSource
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "../../../../../../../../../../Data/UISelectedItem/ItemName"
+                - Name: OutputArguments
+                  Type: BaseObjectType
+                  Children:
+                  - Name: Header
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Description: {"NamespaceIndex":9,"TextId":"QueryHeaderDescription"}
+                    ValueRank: OneDimension
+                    ArrayDimensions: [0]
+                  - Name: ResultSet
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    Description: {"NamespaceIndex":9,"TextId":"QueryResultSetDescription"}
+                    ValueRank: OneOrMoreDimensions
+                    ArrayDimensions: [0,0]
+              - Name: MethodContainer2
+                Type: BaseObjectType
+                Children:
+                - Name: ns=3;ObjectPointer
+                  Type: NodePointer
+                  DataType: NodeId
+                  Children:
+                  - Name: Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/ObjectTypes/BaseObjectType"
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../../../../Data@NodeId"
+                    Children:
+                    - Name: Mode
+                      Type: BaseVariableType
+                      DataType: DynamicLinkMode
+                      ModellingRule: Optional
+                      Value: 2
+                - Name: ns=3;Method
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "Refresh"
+            - Name: EventArguments
+              Type: MouseClickEvent
+              Children:
+              - Name: EventId
+                Type: PropertyType
+                DataType: ByteString
+              - Name: EventType
+                Type: PropertyType
+                DataType: NodeId
+              - Name: SourceNode
+                Type: PropertyType
+                DataType: NodeId
+              - Name: SourceName
+                Type: PropertyType
+                DataType: String
+              - Name: Time
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ReceiveTime
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: Message
+                Type: PropertyType
+                DataType: LocalizedText
+              - Name: Severity
+                Type: PropertyType
+                DataType: UInt16
         - Name: Label1
           Type: Label
           Children:
@@ -16066,6 +16529,78 @@ Children:
           DataType: Size
           ModellingRule: Optional
           Value: 30.0
+        - Name: MouseClickEventHandler1
+          Type: EventHandler
+          Children:
+          - Name: ListenEventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+          - Name: MethodsToCall
+            Type: BaseObjectType
+            Children:
+            - Name: MethodContainer1
+              Type: BaseObjectType
+              Children:
+              - Name: ns=3;ObjectPointer
+                Type: NodePointer
+                DataType: NodeId
+                Value: "/Objects/OptixAdvancedCPT/Reports/Lesson15Report"
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType"
+              - Name: ns=3;Method
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "GeneratePdf"
+              - Name: InputArguments
+                Type: BaseObjectType
+                Children:
+                - Name: OutputPath
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                  Description: {"NamespaceIndex":25,"TextId":"GeneratePdfOutputPathDescription"}
+                  Value: "ns=24;%APPLICATIONDIR%/CPT_report.pdf"
+                - Name: LocaleId
+                  Type: BaseDataVariableType
+                  DataType: LocaleId
+                  Description: {"NamespaceIndex":25,"TextId":"GeneratePdfLocaleIdDescription"}
+              - Name: OutputArguments
+                Type: BaseObjectType
+                Children:
+                - Name: OperationId
+                  Type: BaseDataVariableType
+                  DataType: Guid
+                  Description: {"NamespaceIndex":25,"TextId":"GeneratePdfOperationIdDescription"}
+          - Name: EventArguments
+            Type: MouseClickEvent
+            Children:
+            - Name: EventId
+              Type: PropertyType
+              DataType: ByteString
+            - Name: EventType
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceNode
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceName
+              Type: PropertyType
+              DataType: String
+            - Name: Time
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: ReceiveTime
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: Message
+              Type: PropertyType
+              DataType: LocalizedText
+            - Name: Severity
+              Type: PropertyType
+              DataType: UInt16
       - Name: VL
         Type: ColumnLayout
         Children:

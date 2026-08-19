@@ -183,6 +183,7 @@ Children:
     DataType: Duration
     Value: "0:00:00:01.0000000"
 - Name: Lesson15DataLogger
+  Id: g=1bb5f1feb007d91747841979acf78ed2
   Type: DataLogger
   Children:
   - Name: SamplingMode
