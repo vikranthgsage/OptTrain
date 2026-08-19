@@ -1,7 +1,0 @@
-Name: Groups
-Id: g=33ac98afcbbcd645bc8146197074cc43
-Type: GroupsCategoryFolder
-Children:
-- Name: WorkflowApprovers
-  Id: g=d1168325e2b783c9f6f25dd2e7cbcb8e
-  Type: GroupType

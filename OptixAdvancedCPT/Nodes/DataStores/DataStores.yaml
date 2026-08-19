@@ -108,6 +108,34 @@ Children:
         Type: BaseDataVariableType
         DataType: UInt32
         Value: 1000
+    - Name: Lesson13Data
+      Id: g=be49316cf7126f5b52314d5a57605505
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=9;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: ItemName
+          Type: StoreColumn
+          DataType: BaseDataType
+        - Name: Quantity
+          Type: StoreColumn
+          DataType: BaseDataType
+        - Name: Category
+          Type: StoreColumn
+          DataType: BaseDataType
   - Class: Reference
     Target: ns=21;i=30
     Direction: Forward
