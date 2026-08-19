@@ -1,0 +1,65 @@
+Name: Types
+Type: FolderType
+Children:
+- Name: Navigation_Pos
+  Id: g=0546cbc235a13743576da02133a32566
+  Supertype: BaseObjectType
+  Children:
+  - Name: name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../panelNodeId@BrowseName"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: description
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: panelNodeId
+    Type: BaseDataVariableType
+    DataType: NodeId
+  - Name: iconPath
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+- Name: restAPIphoneObject
+  Id: g=bdf87a0cca1ce979e506e13e1caabfdf
+  Supertype: BaseObjectType
+  Children:
+  - Name: Id
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Data
+    Type: BaseDataVariableType
+    DataType: String
+    ValueRank: OneDimension
+    ArrayDimensions: [10]
+- Name: DataModelLesson16
+  Id: g=64c76dcd7c64d8325c69c0b7ebfb01b7
+  Supertype: BaseObjectType
+  Children:
+  - Name: Variable1
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: Variable2
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: Variable3
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: Variable4
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: Variable5
+    Type: BaseDataVariableType
+    DataType: Int32

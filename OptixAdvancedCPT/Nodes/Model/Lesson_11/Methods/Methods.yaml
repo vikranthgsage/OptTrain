@@ -1,0 +1,44 @@
+Name: Methods
+Type: FolderType
+Children:
+- Name: OPC_UA_MethodTest
+  Id: g=3f007afd92b7cc8637b593bf8535e9c2
+  Supertype: BaseObjectType
+  Children:
+  - Class: Method
+    Name: AddTags
+    Id: g=c461906d5bc1f3dfeb0056830d69b0e8
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"tag1","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"tag2","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+    - Name: ns=0;OutputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"result","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"tag3","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Class: Method
+    Name: Start
+    Id: g=3e3f16c0fce6bcda416aee0987572ada
+  - Class: Method
+    Name: Stop
+    Id: g=de371029d4a740fefbdeb2c9371d7024
+- Name: OPC_UA_MethodTestInstance
+  Id: g=0e28a94dde84ad8f9aaed2603e6c69a1
+  Type: OPC_UA_MethodTest
+  Children:
+  - Class: Reference
+    Target: g=c461906d5bc1f3dfeb0056830d69b0e8
+    Direction: Forward
+  - Class: Reference
+    Target: g=3e3f16c0fce6bcda416aee0987572ada
+    Direction: Forward
+  - Class: Reference
+    Target: g=de371029d4a740fefbdeb2c9371d7024
+    Direction: Forward

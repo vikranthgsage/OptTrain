@@ -1,0 +1,453 @@
+Name: Navigation
+Type: FolderType
+Children:
+- Name: Navigation_Pos1
+  Id: g=41fcfd9cbad6ef6e28ae7de51f0ad671
+  Type: Navigation_Pos
+  Children:
+  - Name: name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Lesson1"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../panelNodeId@BrowseName"
+  - Name: description
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Reusable Objects"
+  - Name: panelNodeId
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: "/Objects/OptixAdvancedCPT/UI/Screens/LessonsUI/Lesson1"
+  - Name: iconPath
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=24;%PROJECTDIR%/Images/Features/Alias.svg"
+- Name: Navigation_Pos2
+  Id: g=73597eba68d0e1fcb9f3a7020092d018
+  Type: Navigation_Pos
+  Children:
+  - Name: name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Lesson2"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../panelNodeId@BrowseName"
+  - Name: description
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Loaders & Layouts"
+  - Name: panelNodeId
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: "/Objects/OptixAdvancedCPT/UI/Screens/LessonsUI/Lesson2"
+  - Name: iconPath
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=24;%PROJECTDIR%/Images/Features/ScaleLayout.svg"
+- Name: Navigation_Pos3
+  Id: g=d8ed1009d17f0c53601ace16a565f277
+  Type: Navigation_Pos
+  Children:
+  - Name: name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Lesson3"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../panelNodeId@BrowseName"
+  - Name: description
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Animation"
+  - Name: panelNodeId
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: "/Objects/OptixAdvancedCPT/UI/Screens/LessonsUI/Lesson3"
+  - Name: iconPath
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=24;%PROJECTDIR%/Images/Features/Animations.svg"
+- Name: Navigation_Pos4
+  Id: g=ac7114eddd6bf3fd1c843922625fa439
+  Type: Navigation_Pos
+  Children:
+  - Name: name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Lesson4"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../panelNodeId@BrowseName"
+  - Name: description
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Trend"
+  - Name: panelNodeId
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: "/Objects/OptixAdvancedCPT/UI/Screens/LessonsUI/Lesson4"
+  - Name: iconPath
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=24;%PROJECTDIR%/Images/Features/Trend(Query).svg"
+- Name: Navigation_Pos5
+  Id: g=3cee972ca47f1f8735a563b1fca9b6a5
+  Type: Navigation_Pos
+  Children:
+  - Name: name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Lesson4"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../panelNodeId@BrowseName"
+  - Name: description
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "XY Plot"
+  - Name: panelNodeId
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: "/Objects/OptixAdvancedCPT/UI/Screens/LessonsUI/Lesson5"
+  - Name: iconPath
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=24;%PROJECTDIR%/Images/Features/XyChart.svg"
+- Name: Navigation_Pos6
+  Id: g=215c0af01f4070a0306f5e6ee9ad29e8
+  Type: Navigation_Pos
+  Children:
+  - Name: name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Lesson4"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../panelNodeId@BrowseName"
+  - Name: description
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Session Variables"
+  - Name: panelNodeId
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: "/Objects/OptixAdvancedCPT/UI/Screens/LessonsUI/Lesson6"
+  - Name: iconPath
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=24;%PROJECTDIR%/Images/Features/Area.svg"
+- Name: Navigation_Pos7
+  Id: g=85493fd3d23908e4e9121f65c0b32a15
+  Type: Navigation_Pos
+  Children:
+  - Name: name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Lesson4"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../panelNodeId@BrowseName"
+  - Name: description
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "RestAPI"
+  - Name: panelNodeId
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: "/Objects/OptixAdvancedCPT/UI/Screens/LessonsUI/Lesson7"
+  - Name: iconPath
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=24;%PROJECTDIR%/Images/Features/api2.svg"
+- Name: Navigation_Pos8
+  Id: g=76884ca7202d8ce4f36df5676557545c
+  Type: Navigation_Pos
+  Children:
+  - Name: name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Lesson4"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../panelNodeId@BrowseName"
+  - Name: description
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Events"
+  - Name: panelNodeId
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: "/Objects/OptixAdvancedCPT/UI/Screens/LessonsUI/Lesson8"
+  - Name: iconPath
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=24;%PROJECTDIR%/Images/Features/TransitionedEvents.svg"
+- Name: Navigation_Pos9
+  Id: g=19401667ec4d223a462fed3e2fb26b36
+  Type: Navigation_Pos
+  Children:
+  - Name: name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Lesson4"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../panelNodeId@BrowseName"
+  - Name: description
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "NetLogic"
+  - Name: panelNodeId
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: "/Objects/OptixAdvancedCPT/UI/Screens/LessonsUI/Lesson9"
+  - Name: iconPath
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=24;%PROJECTDIR%/Images/Features/RuntimeUi.svg"
+- Name: Navigation_Pos10
+  Id: g=55a994a6af8048e31311d886450ef468
+  Type: Navigation_Pos
+  Children:
+  - Name: name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Lesson4"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../panelNodeId@BrowseName"
+  - Name: description
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MQTT"
+  - Name: panelNodeId
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: "/Objects/OptixAdvancedCPT/UI/Screens/LessonsUI/Lesson10"
+  - Name: iconPath
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=24;%PROJECTDIR%/Images/Features/mqtt-ver.png"
+- Name: Navigation_Pos11
+  Id: g=674eb48e4e2b0be0703f4ac445c1d3dc
+  Type: Navigation_Pos
+  Children:
+  - Name: name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Lesson4"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../panelNodeId@BrowseName"
+  - Name: description
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "OPC UA"
+  - Name: panelNodeId
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: "/Objects/OptixAdvancedCPT/UI/Screens/LessonsUI/Lesson11"
+  - Name: iconPath
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=24;%PROJECTDIR%/Images/Features/opcualogo.png"
+- Name: Navigation_Pos12
+  Id: g=53a6ca4d8c0add863e3208e64dc8198d
+  Type: Navigation_Pos
+  Children:
+  - Name: name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Lesson4"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../panelNodeId@BrowseName"
+  - Name: description
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Dynamic Links"
+  - Name: panelNodeId
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: "/Objects/OptixAdvancedCPT/UI/Screens/LessonsUI/Lesson12"
+  - Name: iconPath
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=24;%PROJECTDIR%/Images/Features/DraggableContainers.svg"
+- Name: Navigation_Pos13
+  Id: g=439c319c83fff7fd005bd4396d1c7057
+  Type: Navigation_Pos
+  Children:
+  - Name: name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Lesson4"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../panelNodeId@BrowseName"
+  - Name: description
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Databases"
+  - Name: panelNodeId
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: "/Objects/OptixAdvancedCPT/UI/Screens/LessonsUI/Lesson13"
+  - Name: iconPath
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=24;%PROJECTDIR%/Images/Features/Datalogger.svg"
+- Name: Navigation_Pos14
+  Id: g=e9c7a649353582d8ab73da218be76c23
+  Type: Navigation_Pos
+  Children:
+  - Name: name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Lesson4"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../panelNodeId@BrowseName"
+  - Name: description
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "CFR 21"
+  - Name: panelNodeId
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: "/Objects/OptixAdvancedCPT/UI/Screens/LessonsUI/Lesson14"
+  - Name: iconPath
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=24;%PROJECTDIR%/Images/Features/CompSpecs.svg"
+- Name: Navigation_Pos15
+  Id: g=545ae42a1cc0515c17a480b66b2591d2
+  Type: Navigation_Pos
+  Children:
+  - Name: name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Lesson4"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../panelNodeId@BrowseName"
+  - Name: description
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Reports"
+  - Name: panelNodeId
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: "/Objects/OptixAdvancedCPT/UI/Screens/LessonsUI/Lesson15"
+  - Name: iconPath
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=24;%PROJECTDIR%/Images/Features/Report.svg"
+- Name: Navigation_Pos16
+  Id: g=58c16f42f1b222fe9a19c9d8cc1957fa
+  Type: Navigation_Pos
+  Children:
+  - Name: name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Lesson4"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../panelNodeId@BrowseName"
+  - Name: description
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Device Objects"
+  - Name: panelNodeId
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: "/Objects/OptixAdvancedCPT/UI/Screens/LessonsUI/Lesson16"
+  - Name: iconPath
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=24;%PROJECTDIR%/Images/Features/TemplateLibraries.svg"
+- Name: Navigation_Pos17
+  Id: g=6053da88167c325104a5360e74074d1a
+  Type: Navigation_Pos
+  Children:
+  - Name: name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Lesson4"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../panelNodeId@BrowseName"
+  - Name: description
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Retentivity"
+  - Name: panelNodeId
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: "/Objects/OptixAdvancedCPT/UI/Screens/LessonsUI/Lesson17"
+  - Name: iconPath
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=24;%PROJECTDIR%/Images/Features/DataControl.svg"
+- Name: Navigation_Pos18
+  Id: g=67c5cd8e58fc34278028ef6b288d245d
+  Type: Navigation_Pos
+  Children:
+  - Name: name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Lesson4"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../panelNodeId@BrowseName"
+  - Name: description
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Place for your ideas"
+  - Name: panelNodeId
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: "/Objects/OptixAdvancedCPT/UI/Screens/LessonsUI/UserWorkspace"
+  - Name: iconPath
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=24;%PROJECTDIR%/Images/Features/UserEditor.svg"
