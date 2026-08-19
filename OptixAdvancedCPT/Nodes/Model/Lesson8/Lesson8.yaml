@@ -5,6 +5,7 @@ Children:
 - File: TransitionedEvent/TransitionedEvent.yaml
 - File: RangeTransitionedEvent/RangeTransitionedEvent.yaml
 - Name: localMethods
+  Id: g=b929bfb98d03ebb118dabad158197836
   Type: NetLogic
   Children:
   - Name: scoreLabel
