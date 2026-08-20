@@ -9716,7 +9716,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 40.0
+        Value: 38.0
       - Name: ValueChangeBehaviour
         Type: BaseDataVariableType
         DataType: ValueChangeBehaviour
