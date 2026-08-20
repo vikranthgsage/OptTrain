@@ -1,7 +1,9 @@
 Name: DataToSend
+Id: g=6ea9d74dfc0b1b3b65d7d7b2e2e9497c
 Type: FolderType
 Children:
 - Name: Variable1
+  Id: g=a09aa29706833bb548ef08ab6d461ab8
   Type: BaseDataVariableType
   DataType: Int32
 - Name: Variable2

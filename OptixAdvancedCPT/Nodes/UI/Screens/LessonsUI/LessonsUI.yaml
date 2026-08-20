@@ -9093,6 +9093,133 @@ Children:
             DataType: Size
             ModellingRule: Optional
             Value: 50.0
+          - Name: MouseClickEventHandler1
+            Type: EventHandler
+            Children:
+            - Name: ListenEventType
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+            - Name: MethodsToCall
+              Type: BaseObjectType
+              Children:
+              - Name: MethodContainer1
+                Type: BaseObjectType
+                Children:
+                - Name: ns=3;ObjectPointer
+                  Type: NodePointer
+                  DataType: NodeId
+                  Value: "/Objects/OptixAdvancedCPT/MQTT/MQTTClient2"
+                  Children:
+                  - Name: Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: ns=3;Method
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "Publish"
+                - Name: InputArguments
+                  Type: BaseObjectType
+                  Children:
+                  - Name: Config
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Description: {"NamespaceIndex":13,"TextId":"PublishConfigDescription"}
+                    Value: "{\"Topic\":\"FTOPTIX2\",\"QoS\":0,\"Retain\":false}"
+                  - Name: Payload
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Description: {"NamespaceIndex":13,"TextId":"PublishPayloadDescription"}
+                    Children:
+                    - Name: StringFormatter1
+                      Type: StringFormatter
+                      Children:
+                      - Name: Format
+                        Type: BaseDataVariableType
+                        DataType: LocalizedText
+                        ReferenceType: HasParameter
+                        ModellingRule: Optional
+                        Value: {"LocaleId":"en-US","Text":"{ \n  \"Records\": [ \n    { \n      \"TagName\": \"{0}\", \n      \"Value\": {1} \n    }, \n    { \n      \"TagName\": \"{2}\", \n      \"Value\": {3} \n    } \n  ], \n  \"Timestamp\": \"{4:o}\" \n}"}
+                      - Name: ns=3;Source0
+                        Type: BaseDataVariableType
+                        DataType: BaseDataType
+                        ReferenceType: HasSource
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "/Objects/OptixAdvancedCPT/Model/Lesson10/ManualMQTT/DataToSend/Variable1@BrowseName"
+                      - Name: ns=3;Source1
+                        Type: BaseDataVariableType
+                        DataType: BaseDataType
+                        ReferenceType: HasSource
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "/Objects/OptixAdvancedCPT/Model/Lesson10/ManualMQTT/DataToSend/Variable1"
+                      - Name: ns=3;Source2
+                        Type: BaseDataVariableType
+                        DataType: BaseDataType
+                        ReferenceType: HasSource
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "/Objects/OptixAdvancedCPT/Model/Lesson10/ManualMQTT/DataToSend/Variable2@BrowseName"
+                      - Name: ns=3;Source3
+                        Type: BaseDataVariableType
+                        DataType: BaseDataType
+                        ReferenceType: HasSource
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "/Objects/OptixAdvancedCPT/Model/Lesson10/ManualMQTT/DataToSend/Variable2"
+                      - Name: ns=3;Source4
+                        Type: BaseDataVariableType
+                        DataType: BaseDataType
+                        ReferenceType: HasSource
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "../../../../../../EventArguments/Time"
+                - Name: OutputArguments
+                  Type: BaseObjectType
+                  Children:
+                  - Name: Status
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Description: {"NamespaceIndex":13,"TextId":"PublishStatusDescription"}
+            - Name: EventArguments
+              Type: MouseClickEvent
+              Children:
+              - Name: EventId
+                Type: PropertyType
+                DataType: ByteString
+              - Name: EventType
+                Type: PropertyType
+                DataType: NodeId
+              - Name: SourceNode
+                Type: PropertyType
+                DataType: NodeId
+              - Name: SourceName
+                Type: PropertyType
+                DataType: String
+              - Name: Time
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ReceiveTime
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: Message
+                Type: PropertyType
+                DataType: LocalizedText
+              - Name: Severity
+                Type: PropertyType
+                DataType: UInt16
       - Name: DataGrid1
         Type: DataGrid
         Children:

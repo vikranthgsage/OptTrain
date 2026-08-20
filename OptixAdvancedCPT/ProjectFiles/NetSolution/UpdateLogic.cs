@@ -20,6 +20,7 @@ using FTOptix.RAEtherNetIP;
 using FTOptix.CommunicationDriver;
 using FTOptix.Alarm;
 using FTOptix.EventLogger;
+using FTOptix.OPCUAServer;
 #endregion
 
 public class UpdateLogic : BaseNetLogic

@@ -20,6 +20,7 @@ using FTOptix.CommunicationDriver;
 using FTOptix.AuditSigning;
 using FTOptix.EventLogger;
 using FTOptix.Core;
+using FTOptix.OPCUAServer;
 #endregion
 
 

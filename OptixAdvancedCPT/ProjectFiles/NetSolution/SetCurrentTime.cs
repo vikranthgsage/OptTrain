@@ -20,6 +20,7 @@ using FTOptix.Report;
 using FTOptix.RAEtherNetIP;
 using FTOptix.CommunicationDriver;
 using FTOptix.Alarm;
+using FTOptix.OPCUAServer;
 #endregion
 
 public class SetCurrentTime : BaseNetLogic

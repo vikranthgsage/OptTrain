@@ -146,15 +146,23 @@ Project:
    Uri: 'urn:FTOptix:AuditSigning:Net'
    Module: FTOptix.AuditSigning.Net
    Version: 1.1
+  37:
+   Uri: 'urn:FTOptix:OPCUAServer'
+   Module: FTOptix.OPCUAServer
+   Version: 2.0
+  38:
+   Uri: 'urn:FTOptix:OPCUAServer:Net'
+   Module: FTOptix.OPCUAServer.Net
+   Version: 2.0
  Statistics:
-  TotalNodeCount: 42781
-  Objects: 1898
+  TotalNodeCount: 42894
+  Objects: 1919
   ObjectTypes: 62
-  Variables: 40694
+  Variables: 40786
   VariableTypes: 56
   DataTypes: 56
   Methods: 15
-  References: 137
+  References: 143
   ReferenceTypes: 0
   Files: 79
  Nodes:

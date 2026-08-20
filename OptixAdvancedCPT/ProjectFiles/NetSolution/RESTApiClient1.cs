@@ -12,6 +12,7 @@ using FTOptix.Core;
 using System.Net.Http.Headers;
 using System.Net.Http;
 using System.Threading.Tasks;
+using FTOptix.OPCUAServer;
 #endregion
 
 public class RESTApiClient1 : BaseNetLogic
