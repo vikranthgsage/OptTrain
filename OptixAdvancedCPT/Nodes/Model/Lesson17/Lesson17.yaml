@@ -30,22 +30,27 @@ Children:
   Type: DataModelLesson16
   Children:
   - Name: Variable1
+    Id: g=4a3fc904a7193d04c1667e10a2bec4fb
     Type: BaseDataVariableType
     DataType: Int32
     Value: 65
   - Name: Variable2
+    Id: g=bbd62550b4a6829c1826656e29740e94
     Type: BaseDataVariableType
     DataType: Int32
     Value: 33
   - Name: Variable3
+    Id: g=7691afd0f599b7644ad048c7a1eba5e0
     Type: BaseDataVariableType
     DataType: Int32
     Value: 32
   - Name: Variable4
+    Id: g=d0268d7993a4da17ded2818577f8cfb3
     Type: BaseDataVariableType
     DataType: Int32
     Value: 11
   - Name: Variable5
+    Id: g=3ed932c2b0f3de549fb26301b4b1e0c8
     Type: BaseDataVariableType
     DataType: Int32
     Value: 99

@@ -6,6 +6,9 @@ using FTOptix.Report;
 using FTOptix.RAEtherNetIP;
 using FTOptix.CommunicationDriver;
 using FTOptix.Alarm;
+using FTOptix.AuditSigning;
+using FTOptix.EventLogger;
+using FTOptix.OPCUAServer;
 #endregion
 
 public class VariablesSimulator : BaseNetLogic

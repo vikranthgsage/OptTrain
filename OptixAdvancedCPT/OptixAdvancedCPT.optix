@@ -122,16 +122,48 @@ Project:
    Uri: 'urn:FTOptix:CommunicationDriver:Net'
    Module: FTOptix.CommunicationDriver.Net
    Version: 4.0
+  31:
+   Uri: 'urn:FTOptix:Alarm'
+   Module: FTOptix.Alarm
+   Version: 6.1
+  32:
+   Uri: 'urn:FTOptix:Alarm:Net'
+   Module: FTOptix.Alarm.Net
+   Version: 1.2
+  33:
+   Uri: 'urn:FTOptix:EventLogger'
+   Module: FTOptix.EventLogger
+   Version: 2.0
+  34:
+   Uri: 'urn:FTOptix:EventLogger:Net'
+   Module: FTOptix.EventLogger.Net
+   Version: 1.0
+  35:
+   Uri: 'urn:FTOptix:AuditSigning'
+   Module: FTOptix.AuditSigning
+   Version: 2.0
+  36:
+   Uri: 'urn:FTOptix:AuditSigning:Net'
+   Module: FTOptix.AuditSigning.Net
+   Version: 1.1
+  37:
+   Uri: 'urn:FTOptix:OPCUAServer'
+   Module: FTOptix.OPCUAServer
+   Version: 2.0
+  38:
+   Uri: 'urn:FTOptix:OPCUAServer:Net'
+   Module: FTOptix.OPCUAServer.Net
+   Version: 2.0
  Statistics:
-  TotalNodeCount: 41719
-  Objects: 1698
-  ObjectTypes: 56
-  Variables: 39845
+  TotalNodeCount: 42901
+  Objects: 1921
+  ObjectTypes: 62
+  Variables: 40791
   VariableTypes: 56
   DataTypes: 56
-  Methods: 8
-  References: 101
+  Methods: 15
+  References: 143
   ReferenceTypes: 0
-  Files: 76
+  Files: 79
  Nodes:
  - File: Nodes/OptixAdvancedCPT.yaml

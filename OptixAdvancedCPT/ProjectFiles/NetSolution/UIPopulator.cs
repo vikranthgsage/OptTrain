@@ -9,6 +9,7 @@ using FTOptix.Report;
 using FTOptix.RAEtherNetIP;
 using FTOptix.CommunicationDriver;
 using FTOptix.Alarm;
+using FTOptix.OPCUAServer;
 using OpcUa = UAManagedCore.OpcUa;
 
 public class UIPopulator : FTOptix.NetLogic.BaseNetLogic
@@ -29,7 +30,7 @@ public class UIPopulator : FTOptix.NetLogic.BaseNetLogic
     {
         // Every time the ModelObject variable changes, rebuild the UI
         BuildUI(e.NewValue);
-        Log.Info(LogicObject.BrowseName, "New LogicObject Selected");
+        Log.Warning(LogicObject.BrowseName, "New LogicObject Selected");
 
     }
 
