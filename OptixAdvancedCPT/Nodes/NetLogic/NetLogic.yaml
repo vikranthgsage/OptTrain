@@ -65,3 +65,18 @@ Children:
        "highestIgnoredVersion": 0
       }
      }
+- Name: CreatingVariables
+  Type: NetLogic
+  Children:
+  - Name: BehaviourStartPriority
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Class: Method
+    Name: CreateVariables
+- Name: ReadWriteVariables
+  Id: g=9bdc7ecc1eba0151ee459894811b5281
+  Type: NetLogic
+  Children:
+  - Class: Method
+    Name: Sum

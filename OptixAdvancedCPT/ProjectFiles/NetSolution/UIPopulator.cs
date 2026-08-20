@@ -29,7 +29,7 @@ public class UIPopulator : FTOptix.NetLogic.BaseNetLogic
     {
         // Every time the ModelObject variable changes, rebuild the UI
         BuildUI(e.NewValue);
-        Log.Info(LogicObject.BrowseName, "New LogicObject Selected");
+        Log.Warning(LogicObject.BrowseName, "New LogicObject Selected");
 
     }
 

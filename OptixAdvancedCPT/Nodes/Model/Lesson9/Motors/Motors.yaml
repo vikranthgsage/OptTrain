@@ -1,0 +1,57 @@
+Name: Motors
+Type: FolderType
+Children:
+- Name: Motor1
+  Type: BaseObjectType
+  Children:
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 75
+  - Name: Acceleration
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 50.0
+  - Name: Address
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "192.155.0.1"
+  - Name: Enabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: Motor2
+  Type: BaseObjectType
+  Children:
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 75
+  - Name: Acceleration
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 50.0
+  - Name: Address
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "192.155.0.1"
+  - Name: Enabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: Motor3
+  Type: BaseObjectType
+  Children:
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 75
+  - Name: Acceleration
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 50.0
+  - Name: Address
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "192.155.0.1"
+  - Name: Enabled
+    Type: BaseDataVariableType
+    DataType: Boolean
